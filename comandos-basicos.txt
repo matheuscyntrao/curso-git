@@ -1,0 +1,46 @@
+
+BASIC commands
+
+git -- version # to see if we already have any version of git installed in our system
+git version # check the version we already installed in our system
+
+git init # initialize git on the current folder
+git config user.name "name" user.email # set the information about the user
+ 
+git status # to check status of git
+git add . # to add all changes in current commit
+git add -A (all)
+git add filename.txt # to add an specific file to a commit
+
+git commit -m "First release!" # Commit the changes to the current repository with the message "First release!"
+
+git status --short # Check the compact version of the status for repository:
+git commit -a -m "My Commit Message" # Ignoring the staging proccess (delete local changes)
+git log # to see a list of all commits in repository
+
+git -help # to see all documentation about git commands
+git help --all # to se all possible commands in git
+
+git branch name_of_the_branch # to create a new branch
+git branch # to se all branchs
+
+git checkout name_of_the_branch # to change your current working branch
+git checkout -b name_of_the_branch # to create and change to the new branch
+git merge name_of_the_branch # to merge the specified branch with yours
+git branch -d name_of_the_branch # deletes from your local repository
+
+git remote add origin url_of_an_existing_git_project # Adding a new remote repository
+
+pull = fetch + merge
+
+git fetch origin # Get all the change history of the origin for this branch:
+git merge origin/master # merge local branch with remote master
+git pull # Get all the change history of the origin for this branch:
+git push origin # push the current branch to its default remote origin:
+
+git branch -a # we can se all ours branches (local and remote)
+git branch -r # just remotes
+
+git clone repositori_url.git new_name # cloning a repository with a new name
+git remote rename name changed_name # change the remote branches names
+
